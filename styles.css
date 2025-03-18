@@ -1,0 +1,202 @@
+/* Custom CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #dc3545;
+}
+
+.section-title {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #dc3545;
+    margin: 10px auto 0;
+}
+
+.hero-section {
+    background-color: #ffebee;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    right: -100px;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 182, 193, 0.3);
+    border-radius: 50%;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+/* Category Cards */
+.category-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-img-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Trending Section */
+.trending-section {
+    background-color: #f8f9fa;
+}
+
+/* Product card styling */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-img-container {
+    position: relative;
+    background-color: #fff;
+}
+
+.editors-choice {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Benefits Section */
+.benefit-card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+/* Newsletter */
+.newsletter-container {
+    background-color: #ffebee;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #eee;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    color: #dc3545 !important;
+}
+
+/* Buttons styling */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-4.text-end, .col-md-3.text-end {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+    
+    .nav {
+        justify-content: center;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+    }
+}
